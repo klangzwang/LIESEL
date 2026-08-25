@@ -1,0 +1,14 @@
+name: New MCP server
+version: 0.0.1
+schema: v1
+mcpServers:
+  - name: zip-creator
+    command: python
+    args:
+      - "X:/.lmstudio/skills/zip_tool.py"
+    env: {}
+  - name: liesel-prompts
+    command: python
+    args:
+      - "D:/dev/root/tauri/liesel/mcp_server.py"
+    env: {}

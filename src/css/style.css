@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+
+.react-flow__handle {
+  border: none !important;
+}
+
+.react-flow__attribution {
+  display: none !important;
+}
+
+@layer base {
+	:root {
+		--font-sans: var(--font-geist-sans);
+		--font-mono: var(--font-geist-mono);
+		--background: 0 0% 3.9%;
+		--foreground: 0 0% 98%;
+		--card: 0 0% 3.9%;
+		--card-foreground: 0 0% 98%;
+		--popover: 0 0% 3.9%;
+		--popover-foreground: 0 0% 98%;
+		--primary: 0 0% 98%;
+		--primary-foreground: 0 0% 9%;
+		--secondary: 0 0% 14.9%;
+		--secondary-foreground: 0 0% 98%;
+		--muted: 0 0% 14.9%;
+		--muted-foreground: 0 0% 63.9%;
+		--accent: 0 0% 14.9%;
+		--accent-foreground: 0 0% 98%;
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 0 0% 98%;
+		--border: 0 0% 14.9%;
+		--input: 0 0% 14.9%;
+		--ring: 0 0% 83.1%;
+		--chart-1: 220 70% 50%;
+		--chart-2: 160 60% 45%;
+		--chart-3: 30 80% 55%;
+		--chart-4: 280 65% 60%;
+		--chart-5: 340 75% 55%;
+		--radius: 0.5rem;
+		--sidebar-background: 240 5.9% 10%;
+		--sidebar-foreground: 240 4.8% 95.9%;
+		--sidebar-primary: 224.3 76.3% 48%;
+		--sidebar-primary-foreground: 0 0% 100%;
+		--sidebar-accent: 240 3.7% 15.9%;
+		--sidebar-accent-foreground: 240 4.8% 95.9%;
+		--sidebar-border: 240 3.7% 15.9%;
+		--sidebar-ring: 217.2 91.2% 59.8%;
+		--color-text-lightgray: #a4a5aa;
+		--color-text-lightbrown: #f9eedf;
+		--color-text-cyan: #3f92ac;
+		--color-text-yellow: #f8b818;
+		--color-text-blue: #090c19;
+		--color-raider-blue: #3eccff;
+		--color-raider-green: #3ce466;
+		--color-raider-yellow: #f1aa1c;
+		--color-raider-red: #ff0021;
+		--color-raider-icon-blue: #3894a7;
+
+		--color-live-bg: #1e1e20;
+		--color-live-surface: #2a2a2c;
+		--color-live-surface-raised: #343436;
+		--color-live-surface-inset: #181818;
+		--color-live-panel: #232325;
+		--color-live-border: #3d3d40;
+		--color-live-border-light: #4a4a4d;
+		--color-live-divider: #161617;
+
+		/* Text */
+		--color-live-text: #d8d8d6;
+		--color-live-text-dim: #8c8c8e;
+		--color-live-text-faint: #5e5e60;
+
+		/* Live's signature warm-orange accent (Session/Device highlight) */
+		--color-live-accent: #ffbc13;
+		--color-live-accent-dim: #f9eedf;
+		--color-live-accent-glow: #ffcd14;
+
+		/* Track colour chips Live ships with by default */
+		--color-live-chip-1: #ff6b6b;
+		--color-live-chip-2: #ffb84d;
+		--color-live-chip-3: #f4e04d;
+		--color-live-chip-4: #9bdb5e;
+		--color-live-chip-5: #4dd9c0;
+		--color-live-chip-6: #4db8ff;
+		--color-live-chip-7: #b48cff;
+		--color-live-chip-8: #ff8cd9;
+
+		--color-live-record: #ff4136;
+		--color-live-active: #3ec1ff;
+
+		--font-live: "Inter", "Segoe UI", system-ui, sans-serif;
+		--font-live-mono: "JetBrains Mono", "Roboto Mono", ui-monospace, monospace;
+	}
+}
+
+.vm-type-badge {
+	font-size: 11px;
+	font-weight: 600;
+	color: var(--accent-teal);
+	background: rgba(20, 184, 166, 0.1);
+	border: 1px solid rgba(20, 184, 166, 0.3);
+	border-radius: 20px;
+	padding: 3px 10px;
+	letter-spacing: 0.3px;
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+
+	body {
+		@apply bg-background text-foreground;
+	}
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+	width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+	background-color: #181b28;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background-color: #313443;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.react-flow__selection {
+	background: rgba(226, 194, 125, 0.08) !important;
+	border: 1px dashed #e2c27d !important;
+	border-radius: 2px !important;
+}
+
+/* Hide multi-node selection bounding box */
+.react-flow__nodesselection,
+.react-flow__nodesselection-rect,
+.react-flow__nodesselection-box {
+	display: none !important;
+	border: none !important;
+	background: transparent !important;
+	outline: none !important;
+}
